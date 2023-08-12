@@ -9,14 +9,14 @@ This creates a cookiecutter template out of that existing/living project (!).
 ## Using this repos
 
 ```
-cookiecutter https://github.com/fmv1992/fmv1992_cookiecutter_shell --no-input --checkout t_234_a_shell_argument_parsing_file_to_cookiecutter_local
+cookiecutter https://github.com/fmv1992/fmv1992_cookiecutter_shell --no-input --checkout master
 ```
 
 ## Testing
 
 ```
 cd $(mktemp -d)
-cookiecutter https://github.com/fmv1992/fmv1992_cookiecutter_shell --no-input --checkout t_234_a_shell_argument_parsing_file_to_cookiecutter_local
+cookiecutter https://github.com/fmv1992/fmv1992_cookiecutter_shell --no-input --checkout master
 cd ./my_project
 git init . && git comm --allow-empty -m "first (empty) commit" && make down package build test
 ```
