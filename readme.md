@@ -2,8 +2,6 @@
 
 A template for packaging your own `.deb` files.
 
-This is a spin-off from [shell_argument_parsing_file](https://github.com/fmv1992/shell_argument_parsing_file).
-
 This creates a cookiecutter template out of that existing/living project (!).
 
 ## Using this repos
@@ -44,3 +42,7 @@ git init . && git comm --allow-empty -m "first (empty) commit" && make down pack
     # cp -rf "$(xclip -o)"/* . && make test
     cp -rf /tmp/tmp.shell_argument_parsing_file.1691876457.Fmaf7s/* . && make test
     ```
+
+## Related projects
+
+*   [shell_argument_parsing_file](https://github.com/fmv1992/shell_argument_parsing_file): `shell_argument_parsing_file` creates this project automatically.
