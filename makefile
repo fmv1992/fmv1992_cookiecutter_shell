@@ -14,4 +14,4 @@ test:
 	bash -xv ./other/tests/test_instantiation.sh
 
 git_delete_stale_branches:
-	$(shell get_project_path gnu_make_api)/bin/git_delete_stale_branches $(ROOT_DIR) ./other/git/branches/
+	git_delete_stale_branches --delete --git-directory . --config-directory ./other/git/branches/
