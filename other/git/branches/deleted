@@ -1,3 +1,5 @@
-1686436280,branch_sort_committerdate
-1686436280,t_223_a_add_tests
-1686436280,t_223_a_add_variable
+timestamp_delete_if_commit_is_older,branch,timestamp_delete_after
+1686436280,branch_sort_committerdate,0
+1686436280,t_223_a_add_tests,0
+1686436280,t_223_a_add_variable,0
+1741819511,master,1741819515
