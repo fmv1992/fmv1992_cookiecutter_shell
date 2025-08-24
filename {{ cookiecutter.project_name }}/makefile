@@ -60,7 +60,7 @@ format_yaml:
 	find $(ROOT_DIR) \( -iname '*.yml' -o -iname '*.yaml' -o -iname '.yamlfmt' \) -type f -print0 | xargs -0 -n 100 -- yamlfmt
 
 format_json:
-	find . -iname '*.json' -print0 | parallel --null --max-args 1 -- 'python3 -m json.tool --sort-keys ❴❵ > /tmp/$(PROJECT)_❴❵_ ❴❵'
+	find . -iname '*.json' -print0 | parallel --null --max-args 1 -- 'python3 -m json.tool --sort-keys {} | sponge {}'
 
 #  --- ❵❵❵
 
