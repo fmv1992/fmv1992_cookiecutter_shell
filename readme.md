@@ -17,6 +17,24 @@ cd $(mktemp -d)
 cookiecutter https://github.com/fmv1992/fmv1992_cookiecutter_shell --no-input --checkout master
 cd ./my_project
 git init . && git comm --allow-empty -m "first (empty) commit" && make down package build test
+
+```
+
+## Using
+
+```
+project_='fmv1992_counter_database'
+
+cd $(mktemp -d)
+cookiecutter https://github.com/fmv1992/fmv1992_cookiecutter_shell \
+    --no-input \
+    --checkout master \
+    project_name=${project_}
+cd ${project_}
+git init . \
+    && git checkout -b 'main' \
+    && git comm --allow-empty -m "first (empty) commit" \
+    && make down package build test
 ```
 
 ## Developing

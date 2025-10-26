@@ -6,6 +6,8 @@ set -euxo pipefail
 # Go to execution directory.
 cd "$(dirname $(readlink -f "$❴0❵"))"
 
+# ???: test user
+
 # Add `man` support.
 sudo apt-get update
 sudo apt-get install -y man manpages-posix
